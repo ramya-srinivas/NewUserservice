@@ -15,11 +15,11 @@
 	<description>User Service Microservice</description>
 	<properties>
 		<java.version>11</java.version>
-		<sonar.projectKey>virenderox
+		<sonar.projectKey>ramya-srinivas_NewUserservice
 </sonar.projectKey>
-<sonar.organization>viruuserms</sonar.organization>
+<sonar.organization>ramya-srinivas</sonar.organization>
 <sonar.host.url>https://sonarcloud.io/</sonar.host.url>
-<sonar.login>01c0a9c6bea4f78d21c74c5900d7c34ecd860880</sonar.login>
+<sonar.login>26b001ea9f3b54a7d0d8fe71aa4eb7bbc9c62c51</sonar.login>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -54,12 +54,23 @@
 	</dependencies>
 
 	<build>
+	<pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+        <groupId>org.codehaus.sonar</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>2.5.6</version>
+      </plugin>
 		</plugins>
+		</pluginManagement>
 	</build>
+	
 
 </project>
+
+		
+		
